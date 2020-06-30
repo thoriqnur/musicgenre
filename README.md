@@ -1,4 +1,4 @@
-# Ide Proyek Akhir
+# Deskripsi Project
 - Topik : aplikasi prediksi genre musik
 - Deskripsi : memprediksi genre musik country, classical, jazz, metal, pop, blues, rock, reggae, disco, dan hip-hop
 - Data : ekstraksi manual fitur - fitur dari data audio pada http://marsyas.info/downloads/datasets.html (GTZAN)
