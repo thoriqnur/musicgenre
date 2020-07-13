@@ -2,7 +2,7 @@ import numpy as np
 import math
 import random
 import operator
-from sklearn.naive_bayes import GaussianNB
+from sklearn.naive_bayes import MultinomialNB
 
 
 # --------------------------------------------------------------------------------
@@ -47,9 +47,10 @@ class NaiveBayes:
         k = m
         l = int(math.sqrt(n))
 
-        nb = GaussianNB()
+        nb = MultinomialNB()
         nb.row_idxs = np.random.choice(m, k)
         nb.col_idxs = list(set(np.random.choice(n, l)))
+        self.X = (X-min(X))/(max(X)-min(X))
         nb.fit(self.X, self.y)
         for xi in X:
             predictions = {}
